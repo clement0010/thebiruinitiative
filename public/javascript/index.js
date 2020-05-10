@@ -85,9 +85,10 @@ window.onscroll = function() {
   }};
   
   // Scroll Reveal
-window.sr = ScrollReveal({reset:true});
+window.sr = ScrollReveal({reset: true});
 
 window.addEventListener("load", function(event) {
+  $('#loader').fadeOut();
   let vw = document.body.clientHeight;
   if (vw>=992) {
     var navbar = {
@@ -213,13 +214,13 @@ window.addEventListener("load", function(event) {
       duration: 2000,
       distance: '100px',
       origin: 'bottom',
-      viewFactor: 0.5
+      viewFactor: 0.3
     }
     var submitBtn = {
       duration: 2000,
       distance: '200px',
       origin: 'left',
-      viewFactor: 0.5,
+      viewFactor: 0.3,
       delay: 500
     }
     var partnerTitle = {
