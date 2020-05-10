@@ -1,3 +1,7 @@
+html.sr {
+    visibility: hidden;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
