@@ -1,0 +1,320 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* General */
+.container-fluid {
+    padding: 10% 7%;
+}
+.biru, .link{
+    color: #5CE1E6;
+    font-weight: bold;
+}
+/* Change .btn-outline-info to theme color */
+.btn-outline-info{
+    color: #5CE1E6;
+    border-color: #5CE1E6;
+}
+.btn-outline-info:hover {
+    background-color: #5CE1E6;
+    border-color: #5CE1E6;
+    color:white;
+}
+
+/* Nav bar */
+.logo {
+    margin-left: 20px;
+}
+.nav-item{
+    padding-right: 25px;
+}
+.nav-link, .nav-title .navbar-toggler{
+    color: lightgray !important;
+}
+.nav-link:hover, .nav-title:hover, .nav-item .active{
+    color: #5CE1E6 !important;
+}
+
+/* Hamburger menu */
+.navbar-toggle {
+    display: none;
+}
+
+/* Carousel */
+#carousel .container-fluid {
+    padding: 290px 0;
+}
+/* curtain */
+.carousel-inner {
+    background-color: lightgrey;
+}
+.carousel-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(80%) blur(4px);
+}
+.caption-header {
+    font-size: 3.5rem;
+}
+.carousel-caption {
+    margin-bottom: 130px;
+}
+.carousel-btn {
+    margin: 2% 4%;
+}
+
+/* Side tagline */
+#side-tag {
+    display: none;
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    float: left;
+    z-index: 1;
+    top: 80%;
+    left: 2%;
+    margin: 0;
+    font-size: 1.0rem;
+    color: lightgray;
+}
+
+/* Scroll top button */
+#scrollTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    width: 30px;
+    height: 30px;
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    color: grey;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 100%; /* Rounded corners */
+  }
+  
+#scrollTop:hover .scroll-icon {
+    color: black;
+}
+#scrollTop:hover {
+    background-color: #5CE1E6;
+    transform: scale(1.2);
+    transition: ease-in 0.5s;
+}
+
+
+/* About us */
+.about-title {
+    font: bold 1.7rem 'Lato', sans-serif;
+}
+.tab-pane, .about-description{
+    margin-top: 20px;
+}
+
+/* What we do */
+.what-we-do-title {
+    font: 2rem 'Lato', sans-serif;
+}
+.what-we-do-image {
+    width: 100px;
+    height: 100px;
+    color: #5CE1E6;
+    margin: 40px 0;
+    transition: ease-in-out 0.5s;
+}
+.what-we-do-image:hover {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.5)
+}
+/* Programme */
+.list-group .active {
+    background-color: #5CE1E6 !important;
+    border: none;
+}
+.programme-image {
+    width: 200px;
+    height: 200px;
+}
+.programme {
+    padding: 10% 0;
+}
+
+/* Team */
+.team-title {
+    font: 2rem 'Lato', sans-serif;
+}
+.team-image {
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+}
+.team-name {
+    font-size: 1.5rem;
+}
+.team-icon {
+    margin:0 20px ;
+    color: #5CE1E6;
+    transition: ease-in-out 0.5s;
+}
+.team-icon:hover {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.5)
+}
+/* Contact us */
+.contact-us {
+    text-align: left;
+    justify-content: left;
+}
+.contact-us-title {
+    font: 2rem 'Lato', sans-serif;
+}
+.text-box {
+    min-height: 50px;
+    max-height: 400px;
+}
+
+/* Partner */
+.partner-title {
+    font: 2rem 'Lato', sans-serif;
+}
+
+/* Footer */
+footer.container-fluid{
+    padding-bottom: 0;
+}
+.footer-image-container {
+    padding-right: 0;
+}
+.footer-image, .partner-image{
+    width: 165px;
+    height: 165px;
+}
+.footer-icon {
+    margin-left: 20px;
+    color: #5CE1E6;
+}
+.footer-header {
+    text-align: left;
+}
+.footer-items {
+    list-style-type: none;
+    text-align: left;
+    padding-left:0 ;
+}
+.footer-confidential-list li{
+    display: inline;
+    margin: 0 20px;
+}
+footer a {
+ color: #5CE1E6;
+}
+
+@media only screen and (max-width: 992px) {
+    /* General */
+    .container-fluid {
+        padding: 100px 50px;
+    }
+
+    /* Side tag */
+    .side-tag {
+        display: none;
+    }
+
+    /* Hamburger menu */
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-toggle .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: lightgrey;
+        border-radius: 1px;
+        margin-top: 5px;
+    }
+    .navbar-toggle:hover .icon-bar {
+        background-color: #5CE1E6;
+    }
+    .navbar .navbar-toggle {
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    .navbar-toggle span.icon-bar {
+        transition: all 0.15s;
+    }
+
+    .navbar-toggle span:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: 15% 0%;
+    }
+    .navbar-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+    .navbar-toggle span:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: -5% 0%;
+    }
+    .navbar-toggle.collapsed span:nth-child(1),
+    .navbar-toggle.collapsed span:nth-child(3) {
+        transform: rotate(0);
+    }
+    .navbar-toggle.collapsed span:nth-child(2) {
+        opacity: 1;
+    }
+    .navbar .show {
+        height: 100vh;
+        transition: ease-in 0.1s;
+    }
+
+    /* Scroll top botton */
+    #scrollTop {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    /* Team */
+    #team .team-container:nth-child(2),
+    #team .team-container:nth-child(3){
+        margin: 35px 0
+    }
+    
+    /* Footer */
+    .footer-image-container {
+        text-align: center !important;
+    }
+    .footer-header {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    /* Carousel */
+    .caption-header {
+        font-size: 3rem ;
+    }
+    .carousel-item p {
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    footer small {
+        font-size: 0.6rem;
+    }
+}
